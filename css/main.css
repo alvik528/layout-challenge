@@ -3,7 +3,7 @@
 
 	body {
 		font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-	    font-size: 18px;
+	    font-size: 16px;
 	    font-weight: 300;
 	}
 
@@ -48,7 +48,6 @@
 	}
 
 	header {
-		padding: 1em;
 		color: #FFFFFF;
 		background-color: #FA5A0F;
 		border-bottom-style: solid;
@@ -56,6 +55,8 @@
 	    border-bottom-color: #EA4A00;
 	}
 	header, #information, #menu, #about, footer {
+		margin-right: 0;
+		margin-left: 0;f
 		padding: 1em;
 	}
 
@@ -72,9 +73,6 @@
 		font-size: 80%;
 	}
 
-	#about {
-	}
-
 	footer {
 		text-decoration: none;
 		background-color: #FC892F;
@@ -84,14 +82,20 @@
 		font-size: 80%;
 		text-align: right;
 	}
-	.container-fluid {
-		margin-left: 30%;
-		margin-top: 20px;
-		margin-right: 20px;
-		margin-bottom: 20px;
-	}
+
 	p.tag-line {
 		display: none;
+	}
+	.container-fluid {
+		margin-top: 0;
+		margin-bottom: 0;
+		background-image: url(../img/ricepaper_v3.png);
+		opacity: 0.9;
+	}
+	nav.navigation {
+		padding: 0;
+		margin: 0;
+		list-style: none;
 	}
 }
 @media screen and (min-width: 992px) {
@@ -107,20 +111,7 @@
 		top: 10px
 
 	}
-	.container-fluid {
-		margin-left: 30%;
-		margin-top: 20px;
-		margin-right: 20px;
-		margin-bottom: 20px;
-	}
-	main {
-		margin-left: 30%;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		margin-right: 20px;
-		background-image: url(../img/ricepaper_v3.png);
-		opacity: 0.9;
-	}
+
 	p.tag-line {
 		font-size: 120%;
 		color: #EEEEEE;
@@ -128,19 +119,7 @@
 	}
 
 }
-@media handheld {
 
-	body {
-		font-size: 16px;
-	}
-	nav.ul {
-		padding:; 0;
-		margin: 0;
-	}
-	nav.li {
-		list-style: none
-	}
-}
 
 /* 
 your CSS rules and font imports should go here 
